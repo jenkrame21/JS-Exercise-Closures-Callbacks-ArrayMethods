@@ -28,10 +28,16 @@ function processFirstItem(stringList, callback) {
  * 
  * 1. What is the difference between counter1 and counter2?
  * 
+ * counter1 = name of variable; doesn't have a global variable, variable is inside the function
+ * counter2 = name of function; as a global variable, the variable is outside the function
+
  * 2. Which of the two uses a closure? How can you tell?
  * 
+ * counter1 and counter2 uses a closure. Both are using functions that close off information within itself with {}.
+
  * 3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better? 
  *
+ * counter1 would be preferable for having variables only available within the function and counter2 would be preferable for having a global variable.
 */
 
 // counter1 code
