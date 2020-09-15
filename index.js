@@ -85,11 +85,14 @@ finalScore(inning, 9) might return:
 
 function finalScore(inning, numOfInn){
   for (let i = 0; i < numOfInn; i++) {
-    
-    team1 = team1 + inning();
-    team2 = team2 + inning();
+    const teamOne = 'Home';
+    const teamTwo = 'Away';
+    let finalInn = Math.floor(Math.random() * 2);
+    let lastInn = Math.floor(Math.random() * 2);
+    console.log(`${teamOne} game scored ${finalInn}`);
+    console.log(`${teamTwo} game scored ${lastInn}`);
   }
-  return {Home: team1, Away: team2}
+  return finalScore(`${teamOne}/'s final score is ${finalInn} while ${teamTwo}/'s final score is ${lastInn}`)
 }
 console.log(finalScore(inning, 9));
 
