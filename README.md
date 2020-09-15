@@ -44,6 +44,8 @@ Find the file `index.js` and complete the tasks until your tests are passing.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+Closures are containers that can make global variables private. You cannot access them from outside, they must be brought out from within.
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -61,12 +63,17 @@ const zoesRoll = personalDice("Zoe");
 
 
 dansRoll();
-dansRoll();
+zoesRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+The closure is within the function personalDice. Curly brackets around a function are a good indicator that they are guarding information within itself.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+The first dansRoll is a const variable that's declared to always call the string "Dan" while the second time dansRoll will invoke the random integers up to 6 delcared in the other const of newRoll.
+
 c. What is the lexical scope of `newRoll`? 
+The lexical scope of newRoll is relating to personalDice. It starts at the innermost scope and searches outwards.
 
 ### Task 3 - Stretch Goals
 
