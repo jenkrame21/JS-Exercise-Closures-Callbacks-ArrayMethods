@@ -83,11 +83,15 @@ finalScore(inning, 9) might return:
 
 */ 
 
-function finalScore(/*code Here*/){
-
-  /*Code Here*/
-
+function finalScore(inning, numOfInn){
+  for (let i = 0; i < numOfInn; i++) {
+    
+    team1 = team1 + inning();
+    team2 = team2 + inning();
+  }
+  return {Home: team1, Away: team2}
 }
+console.log(finalScore(inning, 9));
 
 /* Task 4: 
 
